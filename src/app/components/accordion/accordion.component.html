@@ -1,0 +1,41 @@
+<section class="accordion">
+    <h1>My accordion!</h1>
+    <div class="accordion-wrapper">
+        <div class="accordion-item">
+            <header class="accordion-item-header" (click)="onSelectedItem(1)">
+                <div>Item 1</div>
+                <i class="fa-solid fa-chevron-up" [class.isOpened]="selectedIndex === 1"></i>
+            </header>
+            <p *ngIf="selectedIndex === 1" class="accordion-item-text">Etiam viverra sapien in turpis posuere vulputate.</p>
+        </div>
+        <div class="accordion-item">
+            <header class="accordion-item-header" (click)="onSelectedItem(2)">
+                <div>Item 2</div>
+                <i class="fa-solid fa-chevron-up" [class.isOpened]="selectedIndex === 2"></i>
+            </header>
+            <p *ngIf="selectedIndex === 2" class="accordion-item-text">Cras vel ipsum id mi dictum sollicitudin nec cursus libero.</p>
+        </div>
+        <div class="accordion-item">
+            <header class="accordion-item-header" (click)="onSelectedItem(3)">
+                <div>Item 3</div>
+                <i class="fa-solid fa-chevron-up" [class.isOpened]="selectedIndex === 3"></i>
+            </header>
+            <p *ngIf="selectedIndex === 3" class="accordion-item-text">Phasellus non sapien id erat elementum dignissim et eget leo.</p>
+        </div>
+        <div class="accordion-item">
+            <header class="accordion-item-header" (click)="onSelectedItem(4)">
+                <div>Item 4</div>
+                <i class="fa-solid fa-chevron-up" [class.isOpened]="selectedIndex === 4"></i>
+            </header>
+            <p *ngIf="selectedIndex === 4" class="accordion-item-text">Vivamus massa odio, ultrices vel condimentum sit amet, fringilla non mi.</p>
+        </div>
+        <div class="accordion-item">
+            <header class="accordion-item-header" (click)="onSelectedItem(5)">
+                <div>Item 5</div>
+                <i class="fa-solid fa-chevron-up" [class.isOpened]="selectedIndex === 5"></i>
+            </header>
+            <p *ngIf="selectedIndex === 5" class="accordion-item-text">Nulla sed venenatis sem.</p>
+        </div>
+    </div>
+</section>
+

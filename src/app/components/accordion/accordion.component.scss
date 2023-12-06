@@ -1,0 +1,38 @@
+.accordion {
+    padding: 10px;
+}
+
+.accordion-wrapper {
+    border: 1px solid gray;
+    border-radius: 5px;
+
+    width: 50%;
+}
+
+.accordion-item {
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.accordion-item-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.accordion-item-header i {
+    transition: 600ms transform ease;
+}
+
+.accordion-item-header i.isOpened {
+    transform: rotateZ(180deg);
+}
+
+.accordion-item-text {
+    margin-bottom: 0;
+}
