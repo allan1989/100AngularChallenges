@@ -1,0 +1,11 @@
+<div class="card" 
+    style="width: 18rem;" 
+    [class.bg-danger]="!isEmployed"
+    [class.bg-primary]="isEmployed">
+    <img *ngIf="avatarURL" [src]=" avatarURL " class="card-img" alt="{{name}}">
+    <div class="card-body">
+      <h5 *ngIf="name" class="card-title">{{name}}'s card</h5>
+      <ng-content select="[body]"></ng-content>
+      <ng-content select="[footer]"></ng-content>
+    </div>  
+</div>
