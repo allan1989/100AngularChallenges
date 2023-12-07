@@ -5,6 +5,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { CardComponent } from './components/card/card.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
+import { RatingsComponent } from './components/ratings/ratings.component';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { ProgressBarComponent } from './components/progress-bar/progress-bar.com
             ToolbarComponent, 
             CardComponent,
             ProgressBarComponent,
+            RatingsComponent,
             AccordionComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
