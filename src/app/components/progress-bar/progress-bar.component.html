@@ -1,0 +1,11 @@
+<div class="bar">
+    <span class="bar-percentage">{{percentage}}%</span>
+    <div
+        [ngClass]="{
+            'danger' : percentage < 50,
+            'good': percentage >= 50,
+            'excellent': percentage >= 90
+        }" 
+        class="bar-progress" 
+        [ngStyle]="{'width.%': percentage}"></div>
+</div>
