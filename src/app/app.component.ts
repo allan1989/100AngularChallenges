@@ -6,6 +6,7 @@ import { CardComponent } from './components/card/card.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { RatingsComponent } from './components/ratings/ratings.component';
+import { TopOfPageComponent } from './components/top-of-page/top-of-page.component';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,7 @@ import { RatingsComponent } from './components/ratings/ratings.component';
             CardComponent,
             ProgressBarComponent,
             RatingsComponent,
+            TopOfPageComponent,
             AccordionComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
